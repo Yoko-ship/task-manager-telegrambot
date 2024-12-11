@@ -44,7 +44,7 @@ bot = telebot.TeleBot(api_token)
 
 @app.route("/setup",methods=["GET","POST"])
 def setup():
-    webhook_url = "webhook"
+    webhook_url = "https://task-manager-telegrambot.onrender.com"
     success = bot.set_webhook(url=webhook_url)
     if success:
         return "Webhook успешно установлен",200
