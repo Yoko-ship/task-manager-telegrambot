@@ -38,7 +38,7 @@ create_table = """
 
 cursor.execute(user_table)
 cursor.execute(create_table)
-api_token = os.getenv("API_KEY")
+api_token = "7789911148:AAHgKryxshXcrnZTO8MyZJbCsXJ9b6_kmYE"
 bot = telebot.TeleBot(api_token)
 
 
