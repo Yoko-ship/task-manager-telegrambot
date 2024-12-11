@@ -1,6 +1,7 @@
 import telebot 
 from db import cursor
 from datetime import datetime
+from pytz import timezone
 import re
 import os
 import time
@@ -9,7 +10,7 @@ from flask import Flask,request
 
 
 app = Flask(__name__)
-local_time = datetime.now().time().strftime("%H:%M")
+local_time = datetime.now(timezone("Asia/Tashkent")).strftime("%H:%M")
 date = datetime.now().date()
 sorted_data = datetime.strftime(date,"%d-%m-%Y")
 load_dotenv()
